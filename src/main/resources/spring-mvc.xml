@@ -26,4 +26,18 @@ http://www.springframework.org/schema/context/spring-context.xsd">
     <mvc:annotation-driven/>   <!--配置mvc注解-->
     <!--<mvc:resources location="templates"  mapping="templates/**"  />-->
 
+    <!-- html视图解析器 必须先配置freemarkerConfig,注意html是没有prefix前缀属性的 -->
+    <!--<bean id="freemarkerConfig"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath">
+            <value>/WEB-INF/pages/</value>
+        </property>
+    </bean>
+    <bean id="htmlViewResolver"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="contentType" value="text/html;charset=UTF-8"></property>
+        <property name="suffix" value=".html"></property>
+        <property name="order" value="0"></property>
+    </bean>-->
+
 </beans>
